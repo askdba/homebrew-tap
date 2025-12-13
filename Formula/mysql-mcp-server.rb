@@ -1,28 +1,28 @@
 class MysqlMcpServer < Formula
   desc "MySQL MCP Server - Model Context Protocol server for MySQL databases"
   homepage "https://github.com/askdba/mysql-mcp-server"
-  version "1.1.0"
+  version "1.2.0"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.1.0/mysql-mcp-server_1.1.0_darwin_amd64.tar.gz"
-      sha256 "b27c0944c4b5fd1a11bddc7c29f04dac3b62cbfe004572756acfb12f97acb240"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.2.0/mysql-mcp-server_1.2.0_darwin_amd64.tar.gz"
+      sha256 "9badf03bd7a97e5ff64366ec914470ffd50cc3b1dfb54d13592a48ae3186b303"
     end
     on_arm do
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.1.0/mysql-mcp-server_1.1.0_darwin_arm64.tar.gz"
-      sha256 "182a11c03f1a8fb8f74f1e0a8fdc49545f664fa58794c83e18f68f92f153172b"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.2.0/mysql-mcp-server_1.2.0_darwin_arm64.tar.gz"
+      sha256 "d2df2d809aa35157d8b0562ec7d68b48e2b1c95b3d988348003785aed428b9f7"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.1.0/mysql-mcp-server_1.1.0_linux_amd64.tar.gz"
-      sha256 "b63da1d29652bb7b64a0e85cd96d56c4ba1a27cace2ee60349d28272df1335ac"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.2.0/mysql-mcp-server_1.2.0_linux_amd64.tar.gz"
+      sha256 "b4471fa73ee92511aa5028081e9d7d2a3870bb6fdd3c35d25c97de74f79db152"
     end
     on_arm do
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.1.0/mysql-mcp-server_1.1.0_linux_arm64.tar.gz"
-      sha256 "2bb22a0fdd4e7623ebbbe7d02df84780bfd3f12517d611d32769b2e1e3e8140e"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.2.0/mysql-mcp-server_1.2.0_linux_arm64.tar.gz"
+      sha256 "6775b1e6d466eac81118f3623d0432af975c1b9d74763cead68257f1d9cf14d7"
     end
   end
 
