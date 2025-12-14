@@ -1,28 +1,28 @@
 class MysqlMcpServer < Formula
   desc "MySQL MCP Server - Model Context Protocol server for MySQL databases"
   homepage "https://github.com/askdba/mysql-mcp-server"
-  version "1.2.0"
+  version "1.2.1"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.2.0/mysql-mcp-server_1.2.0_darwin_amd64.tar.gz"
-      sha256 "9badf03bd7a97e5ff64366ec914470ffd50cc3b1dfb54d13592a48ae3186b303"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.2.1/mysql-mcp-server_1.2.1_darwin_amd64.tar.gz"
+      sha256 "0123559cdd7fa8467f5bdf3655ef0cc3cc6a5304230828f7ee8111026083c80a"
     end
     on_arm do
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.2.0/mysql-mcp-server_1.2.0_darwin_arm64.tar.gz"
-      sha256 "d2df2d809aa35157d8b0562ec7d68b48e2b1c95b3d988348003785aed428b9f7"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.2.1/mysql-mcp-server_1.2.1_darwin_arm64.tar.gz"
+      sha256 "3bff58f244bfe1e3d1cd2c663762812ec318aeafe89fd0a9ff67dcd5b752ac80"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.2.0/mysql-mcp-server_1.2.0_linux_amd64.tar.gz"
-      sha256 "b4471fa73ee92511aa5028081e9d7d2a3870bb6fdd3c35d25c97de74f79db152"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.2.1/mysql-mcp-server_1.2.1_linux_amd64.tar.gz"
+      sha256 "b9f46301eb85ee6a726f9589e830f84c7a1094acdfd0c5011bb3aae5729ee084"
     end
     on_arm do
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.2.0/mysql-mcp-server_1.2.0_linux_arm64.tar.gz"
-      sha256 "6775b1e6d466eac81118f3623d0432af975c1b9d74763cead68257f1d9cf14d7"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.2.1/mysql-mcp-server_1.2.1_linux_arm64.tar.gz"
+      sha256 "f97a16e1a105146d08dfeaae807d9ab7462c57d2befdd7fb5c83a273901b195e"
     end
   end
 
@@ -57,4 +57,3 @@ class MysqlMcpServer < Formula
     assert_match(/MYSQL_DSN|config error/i, output)
   end
 end
-
