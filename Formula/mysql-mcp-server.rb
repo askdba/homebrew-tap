@@ -1,28 +1,28 @@
 class MysqlMcpServer < Formula
   desc "MySQL MCP Server - Model Context Protocol server for MySQL databases"
   homepage "https://github.com/askdba/mysql-mcp-server"
-  version "1.2.1"
+  version "1.3.1"
   license "Apache-2.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.2.1/mysql-mcp-server_1.2.1_darwin_amd64.tar.gz"
-      sha256 "0123559cdd7fa8467f5bdf3655ef0cc3cc6a5304230828f7ee8111026083c80a"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.3.1/mysql-mcp-server_1.3.1_darwin_amd64.tar.gz"
+      sha256 "63eafd06d802cf68e7f3a9f13f8dea83c9ae9bb156d43bd1eafae055c45cba85"
     end
     on_arm do
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.2.1/mysql-mcp-server_1.2.1_darwin_arm64.tar.gz"
-      sha256 "3bff58f244bfe1e3d1cd2c663762812ec318aeafe89fd0a9ff67dcd5b752ac80"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.3.1/mysql-mcp-server_1.3.1_darwin_arm64.tar.gz"
+      sha256 "903a25134c99c29328b60f472ef8b71aa405040d8d1541b319b6841a0430b61a"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.2.1/mysql-mcp-server_1.2.1_linux_amd64.tar.gz"
-      sha256 "b9f46301eb85ee6a726f9589e830f84c7a1094acdfd0c5011bb3aae5729ee084"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.3.1/mysql-mcp-server_1.3.1_linux_amd64.tar.gz"
+      sha256 "0f5c9b2db7c8a4d7eca1476398cb358e59230e1b2237a63159f377bcef20d260"
     end
     on_arm do
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.2.1/mysql-mcp-server_1.2.1_linux_arm64.tar.gz"
-      sha256 "f97a16e1a105146d08dfeaae807d9ab7462c57d2befdd7fb5c83a273901b195e"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.3.1/mysql-mcp-server_1.3.1_linux_arm64.tar.gz"
+      sha256 "97399d5a3989591aca4622ec06342d6f2fb14f09047394e1ce41532ffd8366b1"
     end
   end
 
