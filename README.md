@@ -8,6 +8,12 @@ Homebrew formulae for askdba projects.
 brew install askdba/tap/mysql-mcp-server
 ```
 
+**Update local installation** (after a new release):
+
+```bash
+brew update && brew upgrade mysql-mcp-server
+```
+
 ## Formulae
 
 ### mysql-mcp-server
@@ -18,9 +24,10 @@ MySQL MCP Server - A fast, read-only MySQL server for the Model Context Protocol
 - Claude Desktop integration via MCP
 - REST API mode for ChatGPT/Gemini (port 9306)
 - Multi-DSN support (connect to multiple databases)
+- MariaDB support (10.x, 11.x)
 - Vector search (MySQL 9.0+)
 - Read-only, safe SQL execution
-- Supports MySQL 5.7, 8.0, 8.4, 9.0
+- Supports MySQL 8.0, 8.4, 9.0 and MariaDB 10.x, 11.x
 
 **Quick Start:**
 
@@ -30,10 +37,11 @@ brew install askdba/tap/mysql-mcp-server
 
 # Configure Claude Desktop
 # Edit: ~/Library/Application Support/Claude/claude_desktop_config.json
+# (macOS) or ~/.config/Claude/claude_desktop_config.json (Linux)
 {
   "mcpServers": {
     "mysql": {
-      "command": "/usr/local/opt/mysql-mcp-server/bin/mysql-mcp-server",
+      "command": "mysql-mcp-server",
       "env": {
         "MYSQL_DSN": "user:password@tcp(localhost:3306)/database"
       }
