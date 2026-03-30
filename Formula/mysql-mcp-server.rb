@@ -5,21 +5,21 @@
 class MysqlMcpServer < Formula
   desc "MySQL MCP Server - Model Context Protocol server for MySQL databases"
   homepage "https://github.com/askdba/mysql-mcp-server"
-  version "1.7.0-rc.1"
+  version "1.7.0-rc.2"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.7.0-rc.1/mysql-mcp-server_1.7.0-rc.1_darwin_amd64.tar.gz"
-      sha256 "2c7a09f9a56f557f5ada6391dc5b6c908baaa064ec54f085071d948b4659068d"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.7.0-rc.2/mysql-mcp-server_1.7.0-rc.2_darwin_amd64.tar.gz"
+      sha256 "79bd50f91d5038fb916ad8edd8ea0dfc6761ac0766226acc66dc6cf7e52adba9"
 
       define_method(:install) do
         bin.install "mysql-mcp-server"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.7.0-rc.1/mysql-mcp-server_1.7.0-rc.1_darwin_arm64.tar.gz"
-      sha256 "7c30db0d8673bfabcefd9ac99e1d829fd400028b98ed3c3508df379fcd2fe568"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.7.0-rc.2/mysql-mcp-server_1.7.0-rc.2_darwin_arm64.tar.gz"
+      sha256 "5e27b055715b926d2968ef293e8f446b8470818badeff3b77c96535e9da623e2"
 
       define_method(:install) do
         bin.install "mysql-mcp-server"
@@ -29,15 +29,15 @@ class MysqlMcpServer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.7.0-rc.1/mysql-mcp-server_1.7.0-rc.1_linux_amd64.tar.gz"
-      sha256 "83362dd371a62467f7ce9d508ab58d8f97c211fa3e5804172403061bea481bcc"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.7.0-rc.2/mysql-mcp-server_1.7.0-rc.2_linux_amd64.tar.gz"
+      sha256 "44d74f8fd6897bed94177b4725a7095eacf30bc4fc3b8d1f6a5e23889a8ec184"
       define_method(:install) do
         bin.install "mysql-mcp-server"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.7.0-rc.1/mysql-mcp-server_1.7.0-rc.1_linux_arm64.tar.gz"
-      sha256 "59a57c2917454f5151c22c3a0dcb7c09bd243e8496d3bad5f7082daed1021591"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.7.0-rc.2/mysql-mcp-server_1.7.0-rc.2_linux_arm64.tar.gz"
+      sha256 "59f889da05a22320c9c7237e4a54e04ab1a52e20fbeab933a1d694aff05e1b87"
       define_method(:install) do
         bin.install "mysql-mcp-server"
       end
@@ -62,6 +62,8 @@ class MysqlMcpServer < Formula
       Config location:
         macOS: ~/Library/Application Support/Claude/claude_desktop_config.json
         Linux: ~/.config/Claude/claude_desktop_config.json
+
+      REST API: set MYSQL_MCP_HTTP=1 (and MYSQL_DSN). The token dashboard at http://localhost:9306/status is enabled by default; set MYSQL_MCP_TOKEN_CARD=0 to disable.
     EOS
   end
 
