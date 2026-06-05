@@ -5,21 +5,21 @@
 class MysqlMcpServer < Formula
   desc "MySQL MCP Server - Model Context Protocol server for MySQL databases"
   homepage "https://github.com/askdba/mysql-mcp-server"
-  version "1.7.1-rc.4"
+  version "1.7.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.7.1-rc.4/mysql-mcp-server_1.7.1-rc.4_darwin_amd64.tar.gz"
-      sha256 "6591d0ba3986d2902ef7ac01b96a7f716506406f3a476d74d1e7e74cb483c17e"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.7.1/mysql-mcp-server_1.7.1_darwin_amd64.tar.gz"
+      sha256 "b6ff546288a0f9dae85f00dce1eca54d218281e80129b61cc0a07678289b59e3"
 
       define_method(:install) do
         bin.install "mysql-mcp-server"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.7.1-rc.4/mysql-mcp-server_1.7.1-rc.4_darwin_arm64.tar.gz"
-      sha256 "544604f97f5a0655c8e490bec39a15f794029d1083375fd79bd20d91c1b4f694"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.7.1/mysql-mcp-server_1.7.1_darwin_arm64.tar.gz"
+      sha256 "4ce16da0a837f59b2f354639aee7073ccbeb9d73f0503850cf9417e4a9a6591c"
 
       define_method(:install) do
         bin.install "mysql-mcp-server"
@@ -29,15 +29,15 @@ class MysqlMcpServer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.7.1-rc.4/mysql-mcp-server_1.7.1-rc.4_linux_amd64.tar.gz"
-      sha256 "afa85b27d2f9b99959f02c484c77a1674a3956caa080903d1417c1fc87c827ec"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.7.1/mysql-mcp-server_1.7.1_linux_amd64.tar.gz"
+      sha256 "db84afeac9db1e1e8f46835d80bc69598efa8143a9e7862bfea9d49813cc60b5"
       define_method(:install) do
         bin.install "mysql-mcp-server"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.7.1-rc.4/mysql-mcp-server_1.7.1-rc.4_linux_arm64.tar.gz"
-      sha256 "5d3cd1333b13164da6c87cd0da01c2e105ce0b29ab2d846df1f75a5f9f63850f"
+      url "https://github.com/askdba/mysql-mcp-server/releases/download/v1.7.1/mysql-mcp-server_1.7.1_linux_arm64.tar.gz"
+      sha256 "ff9a0c84e8f9d0f7c3440d1369b8c4e0120ebb6c477b3331416c9b3789cd04b6"
       define_method(:install) do
         bin.install "mysql-mcp-server"
       end
