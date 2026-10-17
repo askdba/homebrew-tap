@@ -24,10 +24,10 @@ MySQL MCP Server - A fast, read-only MySQL server for the Model Context Protocol
 - Claude Desktop integration via MCP
 - REST API mode for ChatGPT/Gemini (port 9306)
 - Multi-DSN support (connect to multiple databases)
-- MariaDB support (10.x, 11.x)
+- MariaDB support (10.x, 11.x, 12.x)
 - Vector search (MySQL 9.0+)
 - Read-only, safe SQL execution
-- Supports MySQL 8.0, 8.4, 9.0 and MariaDB 10.x, 11.x
+- Supports MySQL 8.0, 8.4, 9.x, 26.x and MariaDB 10.x, 11.x, 12.x (CI-tested on MySQL 8.0, 8.4, 9.7, 26.7 and MariaDB 11.4, 12.3)
 
 **Quick Start:**
 
